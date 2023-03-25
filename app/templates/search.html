@@ -1,0 +1,11 @@
+
+<h1>Search for a Person</h1>
+
+<form method="get" action="{% url 'search_person' %}">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Search</button>
+</form>
+
+        <li>{{ person.name }} ({{ person.age }})</li>
+
